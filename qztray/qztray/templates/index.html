@@ -113,7 +113,7 @@ function signRequest(toSign, callback) {
     $.ajax({
         method: 'POST',
         url: '/sign-printer-request/',
-        data: {'data': toSign},
+        data: toSign,
         async: false,
         success: callback // Data returned from ajax call should be the signature
     });
